@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(168.44deg, #2E335A 1.62%, #1C1B33 95.72%);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    /* margin: 0 auto; */
+    padding: 20px;
+
+  }
+
+  .container > h1{
+    text-align: center;
+    color: white;
+  }
+  
+  .input-section {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 4px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 17px;
+  }
+  input[type="text"]:hover{
+    border: 1px solid gray;
+  }
+
+  
+  button {
+    padding: 20px 30px;
+    border-radius: 10px;
+    background: #4A397FB2;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+  }
+
+  button:hover{
+    background-color: rgb(108, 37, 174);
+  }
+
+  .weather-cards{
+    /* display: flex;
+    flex-direction: row;
+    gap: 20px; */
+
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 10px 40px ;
+  }
+  
+  .weather-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .weather-icon {
+    width: 50px;
+    height: 50px;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .weather-cards{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 10px 40px ;
+      }
+
+      
+    .input-section {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        gap: 20px;
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+      
+  }
+  
+
+  @media (max-width: 425px) {
+    .weather-cards{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 10px 40px ;
+      }
+
+      
+    .input-section {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        gap: 10px;
+
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    input[type="text"] {
+        width: 100px;
+
+    }
+      
+  }
